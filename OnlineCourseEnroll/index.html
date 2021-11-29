@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>OnlineCourse</title>
+   
+   
+      <link rel="stylesheet" href="Style/style.css">
+    <script src="Script/script.js"></script>
+</head>
+<body>
+    
+    <div id="homepage">
+        <h2>Home</h2>
+        <button onclick="NewUser()" id="old">NewUser</button>
+        <button onclick="OldUser()" id="new">Login this</button>
+        <button onclick="GoHome()">Go Home</button>
+    </div>
+    <br><br><br><br>
+    
+    <div id="registration">
+        <h2>New Registration</h2>
+        <label >User Name</label><br>
+        
+        
+        <input id="name" placeholder="Enter Your Name" type="text"><br>
+        <label >Age</label><br>
+        <input type="number" placeholder="Enter Your Age" id="age"><br>
+        
+        
+        <label >Phone Number</label><br>
+        <input type="number" placeholder="Enter Your Number" id="number"><br>
+        <button onclick="AddUser()" id="adduser">Add user</button>
+        <button onclick="GoHome()">Go Home</button>
+    </div>
+    <br><br>
+    
+    <div id="exuser">
+        <h2>Login</h2>
+        <input type="text" placeholder="Enter Your User ID" id="uid">
+        <button onclick="Login()" id="euser">Login</button>
+        <button onclick="GoHome()">Go Home</button>
+
+    </div>
+    <br><br>
+
+    <div id="optionDiv">
+        <h2>Course details</h2>
+        <button onclick="AvailCourse()" id="available">Available Courses</button>
+        <button onclick="EnrolledCourse()" id="enrolled">Enrolled Courses</button>
+        <button onclick="GoHome()">Go Home</button>
+
+    </div><br>
+
+    
+    
+    <div id="aCourse">
+        <h2>Available courses</h2>
+        <select name="detail" id="Cdetails">
+              <option value="JavaScript">JavaScript</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="HTML">HTML</option>
+            
+            <option value="CSS">CSS</option>
+            <option value="C#">C#</option>
+        </select><br>
+         
+        <label >DaysComplete</label><input type="text" placeholder="CourseDuration" id="Cduration"><br>
+        <button onclick="Enroll()" id="Cselected">Submit</button>
+        <button onclick="GoHome()">Go Home</button>
+
+    </div ><br>
+
+    <div id="EnCourse">
+        
+        
+        <label >Courses :</label>
+        <p> <span id="EnCourseList"></span></p>
+        <button onclick="GoHome()">Go Home</button>
+       
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+button{
+    color: #010a04;
+    background-color: rgb(33, 95, 153);
+}
+#homepage{
+    display: block;
+}
+#registration{
+    display: none;
+}
+#exuser{
+    display: none;
+}
+#optionDiv{
+    display: none;
+}
+#aCourse{
+    display: none;
+}
+#EnCourse{
+    display: none;
+}
